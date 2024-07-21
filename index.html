@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de envio</title>
+</head>
+<body>
+    <section>
+        <h2>Contato</h2>
+        <!--COMANDO PARA ENVIO DE EMAIL-->
+        <form action="https://api.staticforms.xyz/submit" method="post">
+        <label>Nome</label>
+        <input type="text" name="name" placeholder="Digite seu nome" required>
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Digite seu email" required>
+        <label>Mensagem</label>
+        <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+<!--CONFIG PARA ENVIO DE EMAIL-->
+        <input type="hidden" name="accessKey" value="7ff4041d-1587-43b7-afdd-98ad491cd41a">
+        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/mensagem-enviada.html">
+        </form>
+    </section>
+</body>
+</html>
